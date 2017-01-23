@@ -154,7 +154,7 @@ input {
 /** HEADER TOP ***/
 .bg-home {
     background: url('../images/bg-home.jpg') no-repeat 0 0;
-    height: 892px;
+    height: 512px;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -194,7 +194,10 @@ input {
     margin-right: 31px;
     margin-top: 4px;
 }
-.nav-top
+.nav-top,
+.nav-top .nav-home {
+  padding-right: 0px;
+}
 .navigation-home ul li:hover {
     color: #777777;
 }
@@ -218,9 +221,7 @@ input {
 .navigation-home ul li:hover ul {
     display: block;
     color: #fff;
-    overflow: hidden;
-    height: 114px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .navigation-home ul li:hover ul li a{
   color: #fff;
