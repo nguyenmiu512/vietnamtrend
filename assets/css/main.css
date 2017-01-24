@@ -221,7 +221,7 @@ input {
 .navigation-home ul li:hover ul {
     display: block;
     color: #fff;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .navigation-home ul li:hover ul li a{
   color: #fff;
@@ -230,7 +230,7 @@ input {
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
-  border-left: 5px solid #000;
+  border-left: 5px solid rgba(0, 0, 0, .1);
 }
 .navigation-home ul li:hover ul li a:hover{
   color: #b1b1b1;
@@ -345,7 +345,7 @@ input {
   display: inline-block;
   margin-right:35px;
 }
-.box-your-report .list-report ul li a{
+.box-your-report .list-report ul li a {
   color: #9B9B9B;
   text-transform: uppercase;
 }
@@ -357,7 +357,9 @@ input {
   margin: 32px auto;
 }
 .box-your-report .list-report ul li a:hover,
-.link-text a:hover{
+.link-text a:hover,
+.list-report .progressbar li.active,
+.list-report .progressbar li.active a{
   color:#980700;
   text-decoration: underline;
 }
@@ -372,8 +374,16 @@ input {
   display: block;
 }
 .box-your-report .result-report,
+.box-your-report .result-report2,
+.box-your-report .result-report3,
+.box-your-report .result-report4,
 .box-choose-report .result-report{
   margin: 19px 0px;
+}
+.box-your-report .result-report2,
+.box-your-report .result-report3,
+.box-your-report .result-report4{
+  display: none;
 }
 .btn-viewmore-yourreport{
   text-align: center;
@@ -406,10 +416,11 @@ input {
 .box-dashboard .in-box-dashboard{
   position: relative;
   top: -138px;
+  height: 90px;
 }
-.box-dashboard .in-box-dashboard a{
+.box-dashboard .in-box-dashboard .dashboard-left,
+.box-dashboard .in-box-dashboard .dashboard-right{
   display: block;
-  border-radius: 12px;
   overflow: hidden;
   box-shadow:0px 30px 80px 0px rgba(0,0,0,0.19), 0px 12px 24px 0px rgba(0,0,0,0.23);
   border-radius:10px;
