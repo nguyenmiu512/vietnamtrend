@@ -161,9 +161,20 @@ input {
 
 /** LOGO **/
 .top-link-back {
-    margin-top: 36px;
+    margin-top: 78px;
+    display: inline-block;
+ -webkit-transition: all .5s;
+   transition: all .5s;
 }
-
+#global-nav .navigation-home ul li.active,
+#global-nav .navigation-home ul li.main-nav:hover,
+#global-nav .navigation-home ul li.main-nav{
+    height: 99px;
+    padding:0px 11px;
+}
+.scrolled-nav .top-link-back{
+  margin-top:12px;
+}
 .bg-home .ic-topbar-black,
 .bg-solution .ic-topbar-black {
     display: none;
@@ -181,7 +192,7 @@ input {
 .bg-home .navigation-home,
 .bg-solution .navigation-home {
     float: right;
-    padding-top: 27px;
+    padding-top: 13px;
     padding-bottom: 18px;
 }
 .navigation-home ul li.last-child{
@@ -206,7 +217,7 @@ input {
     position: absolute;
     padding: 0;
     top: 40px;
-    left: -1px;
+    left:inherit; ;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -224,22 +235,24 @@ input {
     padding-top: 5px;
 }
 .navigation-home ul li:hover ul li a{
-  color: #fff;
+  color: #9b9b9b;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
-  border-left: 5px solid rgba(0, 0, 0, .1);
+}
+.scrolled-nav .navigation-home ul li:hover ul li a{
+  border-left:inherit;
 }
 .navigation-home ul li:hover ul li a:hover{
   color: #b1b1b1;
-  border-left: 5px solid #fff;
 }
 .navigation-home ul li ul li {
     display: block;
     width: 140px;
     padding: 10px 0px;
+    height: 48px;
 }
 
 .navigation-home ul li ul li:hover {
@@ -269,9 +282,41 @@ input {
 }
 
 .navigation-home ul li.main-nav:hover,
-.navigation-home ul li.active {
+.navigation-home ul li.active,
+.scrolled-nav .navigation-home ul li.main-nav:hover,
+.scrolled-nav .navigation-home ul li.active{
     border-bottom: 1px solid #fff;
-    padding: 11px;
+    padding:0px 11px;
+}
+
+.scrolled-nav .navigation-home ul li.main-nav:hover,
+.scrolled-nav .navigation-home ul li.active{
+    border-bottom: 3px solid #fff;
+    padding:0px 11px;
+}
+
+
+.scrolled-nav .navigation-home ul li.main-nav:hover,
+.scrolled-nav .navigation-home ul li.active{
+  margin-top:0px;
+}
+.scrolled-nav .navigation-home{
+  padding-top:0px;
+}
+.scrolled-nav .navigation-home ul li.main-nav{
+  padding:0px 11px;
+  margin-top:0px;
+  height: 60px !important;
+}
+.scrolled-nav .navigation-home ul li ul li{
+  display: block;
+  width: 140px;
+  background-color: #222222;
+  padding:0px;
+  opacity: 0.9;
+}
+.scrolled-nav .navigation-home ul li:hover ul{
+  margin-top: 15px !important;
 }
 .navigation-home ul li.last-child .signup{
   background-color:#cf1e26;
@@ -283,6 +328,36 @@ input {
     border: none;
 
 }
+
+
+#global-nav {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 150px;
+  width: 100%;
+  background: #324c5f;
+  color: #fff;
+  line-height: 150px;
+  -webkit-transition: height .5s, line-height .5s; /* Safari */
+  transition: height .5s, line-height .5s;
+  background: inherit;
+}
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+  background: #980700 !important;
+}
+.counter {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: #fff;
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
+
 /** Navigation close **/
 
 /***TOPBAR open***/
@@ -356,6 +431,47 @@ input {
   background: #4A4A4A;
   margin: 32px auto;
 }
+.search-categories{
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 49px;
+}
+.search-categories  .btn-info{
+  background-color: #000000 !important;
+  color:#fff !important;
+  border-color: inherit !important;
+}
+.search-categories input{
+  background-color: #fff;
+  padding: 20px 10px;
+  width: 390px;
+  font-size: 14px;
+  margin-left: -6px;
+  border: inherit;
+  -webkit-box-shadow: -1px 0px 27px 0px rgba(181, 181, 181, 0.75);
+-moz-box-shadow: -1px 0px 27px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 27px 0px rgba(191, 191, 191, 0.75);
+}
+.search-categories .btn-search-cate{
+  background-color: #980700;
+      border-radius: inherit;
+      color: #fff;
+      padding: 13px 22px;
+      margin-left: -4px;
+      font-size: 23px;
+}
+.search-categories .btn-group>.btn:first-child{
+  padding: 20px 0px;
+  border-radius: inherit;
+}
+.search-categories .bootstrap-select.btn-group .dropdown-toggle .filter-option{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.search-categories .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+  width: 200px;
+}
 .box-your-report .list-report ul li a:hover,
 .link-text a:hover,
 .list-report .progressbar li.active,
@@ -416,24 +532,33 @@ input {
 .box-dashboard .in-box-dashboard{
   position: relative;
   top: -138px;
-  height: 90px;
 }
 .box-dashboard .in-box-dashboard .dashboard-left,
 .box-dashboard .in-box-dashboard .dashboard-right{
   display: block;
   overflow: hidden;
+    max-height: 355px;
   box-shadow:0px 30px 80px 0px rgba(0,0,0,0.19), 0px 12px 24px 0px rgba(0,0,0,0.23);
   border-radius:10px;
+    background-color: #ffffff;
 }
 .box-dashboard .in-box-dashboard a img{
   width: 100%;
+}
+.title-dashboard h3{
+    font-size:24px;
+    color:#980700;
+}
+.title-dashboard p{
+    font-size:14px;
+    color:#9b9b9b;
 }
 /***YOUR REPORT close***/
 
 /***OUR UPDATE open***/
 .box-our-update{
   background-color: #980700;
-  padding: 20px 0px 74px 0px;
+  padding: 20px 0px 0px 0px;
 }
 .box-our-update .in-box-ourupdate{
   text-align: center;
@@ -511,18 +636,33 @@ input {
 }
 
 .sitefooter {
-    background: #222222;
+    background: #f1f1f1;
 }
 
 .in-footer {
     padding: 40px 0px;
 }
-
+.sitefooter .networks {
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.sitefooter .networks li {
+    display: inline-block;
+    margin-right: 9px;
+    font-size: .685em;
+    text-transform: uppercase;
+}
 .in-footer .logo-footer .link-ft {
-    background: url('../images/logo-ft.png') no-repeat 0 0;
     display: block;
     width: 177px;
     height: 42px;
+}
+.sitefooter .networks li img {
+    height: 23px !important;
+}
+.sitefooter .networks li a:link {
+    color: #666;
 }
 
 .add-ft {
@@ -2154,4 +2294,14 @@ you can use the generic selector below, but it's slower:
 }
 .case-studies {
   padding-top: 86px;
+}
+.nav-footer{
+    border-top: 1px solid #ffffff;
+    margin-top: 60px;
+}
+.nav-footer li a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
 }

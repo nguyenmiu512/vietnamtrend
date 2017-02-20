@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Vietnam Trend</title>
+    <title>Vietnam Trend Category</title>
 
     <!-- jQuery -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
@@ -16,6 +16,8 @@
     <!-- Boostrap -->
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="assets/lib/bootstrap/js/bootstrap-select.min.css">
 
 
     <!-- Font awesome -->
@@ -30,7 +32,7 @@
     <link href="assets/css/main-hai.css" rel="stylesheet"/>
     <link href="assets/css/responsive.css" rel="stylesheet"/>
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" href="#"/>
 
 </head>
 
@@ -112,152 +114,152 @@
             </div>
         </div>
         <div class="bg-home">
-            <div class="header">
-                <div id="global-nav" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nav-top">
-                    <div class="container container-custom">
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top-link-back">
-                            <div class="ic-topbar-white">
-                                <a class="logo-vnp-back header-logo" href="detail.html">
-                                    Vietnam Trend
-                                </a>
+            <div  class="header">
+                        <div id="global-nav" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nav-top">
+                          <div class="container container-custom">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 top-link-back">
+                                <div class="ic-topbar-white">
+                                    <a class="logo-vnp-back header-logo" href="detail.html">
+                                        Vietnam Trend
+                                    </a>
+                                </div>
+                                <div class="ic-topbar-black">
+                                    <a class="logo-vnp-back" href="detail.html">
+                                        <img src="assets/images/logo-sb-black.png"/>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="ic-topbar-black">
-                                <a class="logo-vnp-back" href="detail.html">
-                                    <img src="assets/images/logo-sb-black.png"/>
-                                </a>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nav-home">
+                                <div class="navigation-home">
+                                    <ul>
+                                        <li class="active main-nav">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="main-nav">
+                                            <a href="#">7Days</a>
+                                        </li>
+                                        <li class="main-nav">
+                                            <a href="#">Report Categories
+                                                <ul class="drop-down">
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Entertaiment</a></li>
+                                                    <li><a href="#">Cosmetic</a></li>
+                                                </ul>
+                                            </a>
+                                        </li>
+                                        <li class="main-nav">
+                                            <a href="#">About</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nav-home">
-                            <div class="navigation-home">
-                                <ul>
-                                    <li class="active main-nav">
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li class="main-nav">
-                                        <a href="#">7Days</a>
-                                    </li>
-                                    <li class="main-nav">
-                                        <a href="#">Report Categories
-                                            <ul class="drop-down">
-                                                <li><a href="#">Finance</a></li>
-                                                <li><a href="#">Entertaiment</a></li>
-                                                <li><a href="#">Cosmetic</a></li>
-                                            </ul>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav">
-                                        <a href="#">About</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <!-- Navigation mobile open -->
-                        <div class="menu-mobile">
-                            <nav class="navbar navbar-inverse navbar-fixed-top inverse-custom">
-                                <div class="hotline-m login">
-                                    <div class="container-fluid">
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hotline-text">
+                            <!-- Navigation mobile open -->
+                            <div class="menu-mobile">
+                                <nav class="navbar navbar-inverse navbar-fixed-top inverse-custom">
+                                    <div class="hotline-m login">
+                                        <div class="container-fluid">
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hotline-text">
                                             <span><i class="fa fa-phone" aria-hidden="true"></i>01234-567-45893</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="navbar-header navbar-header-mobile">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                                    data-target="#bs-example-navbar-collapse-1">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-logo navbar-logo-mobile" href="#"></a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-custom">
+                                                <li class="active">
+                                                    <a href="index.htm">Home
+                                                    </a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#">7Days
+                                                    </a>
+                                                </li>
+                                                <li role="presentation" class="dropdown">
+                                                    <a href="news&blog.html" class="dropdown-toggle"
+                                                       data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                       aria-expanded="false">
+                                                        Report & Categories
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Audio books</a>
+                                                        </li>
+                                                        <li><a href="#">Business books</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">About</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- Navigation mobile close -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-slide">
+                <div class="container container-custom">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-home">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-top-home">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-top-home">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--MODAL THANKOU open-->
+                    <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <div class="row">
+                                        <div class="col-md-12 para-thank">
+                                            <h3>THANK YOU!</h3>
+                                            <p>
+                                                Cảm ơn quý vị đã đăng ký dịch vụ của SocialBeat.<br/>
+                                                Chúng tôi sẽ liên hệ lại trong thời gian ngắn nhất. <br/>
+                                                <br/>
+                                                <span>SocialBeat - Viet Brands' Wise Listener.</span><br/>
+                                                Rất hân hạnh được phục vụ.
+                                            </p>
+                                            <a href="#" class="btn-follow"><i class="fa fa-facebook"
+                                                                              aria-hidden="true"></i>follow</a>
+                                            <p class="alert-para">
+                                                *Theo dõi Fanpage SocialBeat để cập nhật những xu hướng hot nhất trên
+                                                Mạng xã hội hàng tuần
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="container-fluid">
-                                    <div class="navbar-header navbar-header-mobile">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                                data-target="#bs-example-navbar-collapse-1">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-logo navbar-logo-mobile" href="#"></a>
-                                    </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-custom">
-                                            <li class="active">
-                                                <a href="index.html">Home
-                                                </a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="index.html">7Days
-                                                </a>
-                                            </li>
-                                            <li role="presentation" class="dropdown">
-                                                <a href="news&blog.html" class="dropdown-toggle"
-                                                   data-toggle="dropdown" role="button" aria-haspopup="true"
-                                                   aria-expanded="false">
-                                                    Report & Categories
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="News.html">Audio books</a>
-                                                    </li>
-                                                    <li><a href="Blog.html">Business books</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">About</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                        <!-- Navigation mobile close -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="top-slide">
-            <div class="container container-custom">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-home">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-top-home">
-
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-top-home">
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--MODAL THANKOU open-->
-                <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <div class="row">
-                                    <div class="col-md-12 para-thank">
-                                        <h3>THANK YOU!</h3>
-                                        <p>
-                                            Cảm ơn quý vị đã đăng ký dịch vụ của SocialBeat.<br/>
-                                            Chúng tôi sẽ liên hệ lại trong thời gian ngắn nhất. <br/>
-                                            <br/>
-                                            <span>SocialBeat - Viet Brands' Wise Listener.</span><br/>
-                                            Rất hân hạnh được phục vụ.
-                                        </p>
-                                        <a href="#" class="btn-follow"><i class="fa fa-facebook"
-                                                                          aria-hidden="true"></i>follow</a>
-                                        <p class="alert-para">
-                                            *Theo dõi Fanpage SocialBeat để cập nhật những xu hướng hot nhất trên
-                                            Mạng xã hội hàng tuần
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--MODAL THANKOU close-->
+                    <!--MODAL THANKOU close-->
 
+                </div>
             </div>
-        </div>
 
     </section>
 
@@ -282,7 +284,7 @@
                         <img class="img-responsive" src="assets/images/dashboard-time.png"/>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 dashboard-right dashboard-block">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs dashboard-right dashboard-block">
                     <div class="col -lg-12 col-md-12 col-sm-12 col-xs-12 title-dashboard">
                         <div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
                             <h3 class="dashboard-block-title">Kênh thảo luận</h3>
@@ -304,264 +306,156 @@
     <!--BOX DASHBOARD close-->
 
 
-    <!--BOX YOUR REPORT open-->
-    <div class="box-your-report box-home">
-        <div class="container container-custom">
-            <h3 class="box-title"><span class="extra-bold">Discover</span> Your Next Report</h3>
-            <span class="line-title"></span>
-            <div class="list-report ">
-                <ul class="progressbar box-filter">
-                    <li id="new-release" class="trend-release active">
-                        <a href="#">New Release</a>
-                    </li>
-                    <li id="coming-soon" class="trend-coming">
-                        <a href="#">Coming Soon</a>
-                    </li>
-                    <li id="best-seller" class="trend-seller">
-                        <a href="#">Best Seller</a>
-                    </li>
-                    <li id="award" class="trend-award">
-                        <a href="#">Award winner</a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report list-item" id="nrelease">
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb1.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">The Forest</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb2.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">FinanceThe long road to
-                            the deep silence</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb3.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">It's really strange story</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb4.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">Storm</a>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report2 list-item" id="cmingsoon">
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb4.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">The Forest</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb3.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">FinanceThe long road to
-                            the deep silence</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb2.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">It's really strange story</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb1.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">Storm</a>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report3 list-item" id="bseller">
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb3.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">The Forest</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb4.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">FinanceThe long road to
-                            the deep silence</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb1.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">It's really strange story</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb2.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">Storm</a>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report4 list-item" id="aseller">
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb2.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">The Forest</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb3.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">FinanceThe long road to
-                            the deep silence</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb4.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">It's really strange story</a>
-                    </div>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
-                    <div class="link-image">
-                        <a href="detail.html">
-                            <img src="assets/images/home-thumb1.jpg"/>
-                        </a>
-                    </div>
-                    <div class="link-text">
-                        <a href="detail.html">Storm</a>
-                    </div>
-                </li>
-            </ul>
-
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-box btn-view-more btn-viewmore-yourreport">
-                <a href="#">Discover more reports</a>
-            </div>
-        </div>
-    </div>
-    <!--BOX YOUR REPORT close-->
 
 
     <!--BOX CHOOSE REPORT open-->
-    <div class="box-choose-report box-home">
+    <div class="box-choose-report box-home box-bg-grey">
         <div class="container container-custom">
             <h3 class="box-title"><span class="extra-bold">Choose</span> Your Report</h3>
 
             <span class="line-title"></span>
-            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report5 list-item">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 search-categories">
+          <form>
+            <select class="selectpicker">
+              <option>Report</option>
+              <option>Report Finance</option>
+              <option>Report Entertaiment</option>
+              <option>Report Comestic</option>
+            </select>
+
+            <input placeholder="Search by Title, Author, Subject or ISBN here...">
+      	    <a href="#" class="btn btn-search-cate"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </form>
+      </div>
+            <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 result-report5 list-item list-category">
                 <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
                     <div class="link-image">
-                        <a href="detail.html">
+                        <a href="#">
                             <img src="assets/images/home-thumb1.jpg"/>
                         </a>
                     </div>
                     <div class="link-text">
-                        <a href="detail.html">The Forest</a>
+                        <a href="#">The Forest</a>
                     </div>
+                    <div class="post-count">5 report</div>
                 </li>
                 <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
                     <div class="link-image">
-                        <a href="detail.html">
+                        <a href="#">
                             <img src="assets/images/home-thumb2.jpg"/>
                         </a>
                     </div>
                     <div class="link-text">
-                        <a href="detail.html">FinanceThe long road to
+                        <a href="#">FinanceThe long road to
                             the deep silence</a>
-                    </div>
+                    </div><div class="post-count">5 report</div>
                 </li>
                 <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
                     <div class="link-image">
-                        <a href="detail.html">
+                        <a href="#">
                             <img src="assets/images/home-thumb3.jpg"/>
                         </a>
                     </div>
                     <div class="link-text">
-                        <a href="detail.html">It's really strange story</a>
-                    </div>
+                        <a href="#">It's really strange story</a>
+                    </div><div class="post-count">5 report</div>
                 </li>
                 <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
                     <div class="link-image">
-                        <a href="detail.html">
+                        <a href="#">
                             <img src="assets/images/home-thumb4.jpg"/>
                         </a>
                     </div>
                     <div class="link-text">
-                        <a href="detail.html">Storm</a>
+                        <a href="#">Storm</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb1.jpg"/>
+                        </a>
                     </div>
+                    <div class="link-text">
+                        <a href="#">The Forest</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">FinanceThe long road to
+                            the deep silence</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">It's really strange story</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb4.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">Storm</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb1.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">The Forest</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">FinanceThe long road to
+                            the deep silence</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">It's really strange story</a>
+                    </div><div class="post-count">5 report</div>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-result-report">
+                    <div class="link-image">
+                        <a href="#">
+                            <img src="assets/images/home-thumb4.jpg"/>
+                        </a>
+                    </div>
+                    <div class="link-text">
+                        <a href="#">Storm</a>
+                    </div><div class="post-count">5 report</div>
                 </li>
             </ul>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-box btn-viewmore-yourreport">
-                <a href="#">Discover more reports</a>
-            </div>
+
         </div>
     </div>
     <!--BOX CHOOSE REPORT close-->
@@ -764,6 +658,11 @@
             }
 
         });
+        $('.selectpicker').selectpicker({
+  style: 'btn-info',
+  size: 4
+});
+
 
     });
 </script>
